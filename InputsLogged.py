@@ -1,3 +1,4 @@
+import random
 class InputsLogged:
     def __init__(self) -> None:
         pass
@@ -10,3 +11,9 @@ class InputsLogged:
             print("Input is not a number, please type a number in the given list : ")
             return False
         return choice
+
+    def ask_about_posting():
+        choice = input("What's happening ? :")
+        post_id = random.randbytes(1244444)
+        return {"choice":choice,"post_id":post_id}
+

@@ -17,9 +17,14 @@ while is_on:
         is_logged = users.check_password(mailPassObj)
         if is_logged:
             ask_user_logged = inputs_logged.ask_user()
+            # TODO  TODO
+            # TODO  TODO
+            # TODO CURRENT USER LOGGED ?
             # write a post
             if ask_user_logged == 0:
-                pass
+               post = InputsLogged.ask_about_posting()
+            #    current_user_logged = Users.find_current_user_logged()
+            #    save_post = Users.save_post(post,current_user_logged)
             # find user
             if ask_user_logged == 1:
                 pass
